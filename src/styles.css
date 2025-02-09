@@ -58,7 +58,7 @@ nav button:hover, .home button:hover{
     background-size: 80% 500px;
 }
 
-.home, .menu, .contact {
+.home, .menu, .about {
     background-color: #ff5722;
     height: 100%;
 }
@@ -133,6 +133,31 @@ nav button:hover, .home button:hover{
 .menu .item1-ingredients {
     grid-area: 3/1/4/4;
     
+}
+/*AboutPage*/
+.about {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 700px;
+}
+.about .title {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+}
+.about .contact-body ,.about .working-hours-body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 15px;
+    gap: 5px;
+    justify-content: center;
+}
+.about .contact-body div + div , .about .working-hours-body div +div{
+    border-top: solid;
+    padding-top: 5px;
 }
 /*Footer*/
 footer {
