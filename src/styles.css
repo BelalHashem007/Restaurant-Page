@@ -1,7 +1,9 @@
+/*Some reset*/
 * {
     box-sizing: border-box;
     margin: 0;
 }
+/*Body*/
 body {
     height: 100vh;
     width: 100vw;
@@ -12,6 +14,7 @@ body {
     gap: 40px;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+/*Header*/
 header {
     width: 100%;
     height: 20%;
@@ -25,18 +28,6 @@ nav {
     justify-content: center;
     gap: 30px;
 }
-#content {
-    width: 60%;
-    height: 75%;   
-    margin: 0 auto;
-}
-.img-container {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background: no-repeat url("./pizza.jpg") center;
-    background-size: 80% 500px;
-}
 nav button {
     appearance: none;
     border: 1px solid black;
@@ -45,34 +36,54 @@ nav button {
     font-size: 1.4rem;
     background-color: transparent;
     color: white;
+    font-weight: bold;
 }
 nav button:hover, .home button:hover{
     cursor: pointer;
     opacity: 0.8;
     box-shadow: 1px 1px 1px black;
 }
-.home {
+/*Content body*/
+#content {
+    width: 60%;
+    height: 75%;   
+    margin: 0 auto;
+}
+/*HomePage*/
+.home .img-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: no-repeat url("./pizza.jpg") center;
+    background-size: 80% 500px;
+}
+
+.home, .menu, .contact {
     background-color: #ff5722;
     height: 100%;
+}
+.home {
+    
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: center;
 }
-.title {
+.home .title {
     text-align: center;
     padding: 20px;
     color: white;
     font-size: 1.8rem;
     font-style: italic;
+    font-weight: bold;
 }
-.img-container .img-text {
+.home .img-container .img-text {
     position: absolute;
     right: 10%;
     color: white;
     font-size: 1.5rem;
 }
-.text-container {
+.home .text-container {
     color: white;
     margin: 0 auto;
     width: 80%;
@@ -86,6 +97,44 @@ nav button:hover, .home button:hover{
     color: white;
     font-size: 1.5rem;
 }
+/*MenuPage*/
+.menu {
+    height: 700px;
+}
+.menu .text-container {
+    color: white;
+    height: 100%;
+}
+.menu .text-container .title {
+    font-size: 1.8rem;
+    width: 60px;
+    margin: 0 auto;
+    padding: 10px ;
+}
+.menu .text-container .text {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    font-size: 1.3rem;
+    gap: 10px;
+    align-items: center;
+}
+.menu .med-size {
+    grid-area: 1/1/2/3;
+    justify-self: end;
+}
+.menu .prize, .menu .lar-size{
+    justify-self: end;
+}
+.menu .ingredients{
+    font-size: 0.8rem;
+}
+.menu .item1-ingredients {
+    grid-area: 3/1/4/4;
+    
+}
+/*Footer*/
 footer {
     height: 10%;
     width: 100%;
