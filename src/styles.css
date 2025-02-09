@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background: no-repeat url("./background.jpg") ;
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+header {
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #ff5722;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#content {
+    width: 60%;
+    height: 75%;   
+    margin: 0 auto;
+}
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: no-repeat url("./pizza.jpg") center;
+    background-size: 80% 500px;
+}
+nav button {
+    appearance: none;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: white;
+}
+nav button:hover, .home button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 1px 1px 1px black;
+}
+.home {
+    background-color: #ff5722;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.title {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+.img-container .img-text {
+    position: absolute;
+    right: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+.text-container {
+    color: white;
+    margin: 0 auto;
+    width: 80%;
+}
+.home button {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color:rgba(177, 37, 37, 0.644);
+    color: white;
+    font-size: 1.5rem;
+}
+footer {
+    height: 10%;
+    width: 100%;
+    background-color:#ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
